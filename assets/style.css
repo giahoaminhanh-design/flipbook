@@ -1,0 +1,30 @@
+
+:root{--bg:#0b1220;--fg:#e5e7eb;--muted:#9ca3af;--brand:#10b981;--card:#111827;--border:#1f2937}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{min-height:100%;display:flex;flex-direction:column}
+header{position:sticky;top:0;z-index:10;backdrop-filter:saturate(160%) blur(6px);
+  background:linear-gradient(180deg,rgba(11,18,32,.96),rgba(11,18,32,.75));border-bottom:1px solid var(--border)}
+.nav{max-width:1200px;margin:auto;display:flex;gap:12px;align-items:center;padding:10px 16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700}
+.logo-dot{width:10px;height:10px;border-radius:999px;background:var(--brand)}
+.spacer{flex:1}
+.btn{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--border);padding:8px 12px;border-radius:12px;background:var(--card);color:var(--fg)}
+.btn:hover{border-color:#374151}
+main{flex:1;display:flex;flex-direction:column}
+.viewer{max-width:1200px;margin:10px auto;padding:0 12px}
+#flipbook{width:100%;max-width:1000px;height:640px;margin:12px auto;background:var(--card);
+  border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.page{background:white;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.page img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.controls{display:flex;gap:8px;justify-content:center;align-items:center;margin:8px auto;flex-wrap:wrap}
+.controls .btn{user-select:none;cursor:pointer}
+.info{color:var(--muted);text-align:center;font-size:14px}
+footer{border-top:1px solid var(--border);margin-top:16px}
+.foot{max-width:1200px;margin:auto;padding:18px 16px;color:var(--muted);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+kbd{font-family:ui-monospace,Menlo,Consolas,monospace;border:1px solid var(--border);border-bottom:2px solid #0003;border-right:2px solid #0003;border-radius:6px;padding:.1rem .35rem;background:var(--card);color:var(--fg)}
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;height:280px;color:var(--muted)}
+.progress{height:6px;background:#111;border:1px solid var(--border);border-radius:999px;overflow:hidden;width:min(600px,90%)}
+.progress>div{height:100%;background:var(--brand);width:0%}
+.small{font-size:12px;color:var(--muted)}
